@@ -6,4 +6,5 @@ waybar \
 hypridle \
 hyprlock \
 zsh \
+starship \
 --noconfirm
