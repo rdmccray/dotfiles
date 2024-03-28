@@ -1,7 +1,9 @@
 #!/bin/sh
-pacman -S exa \
+pacman -S \
+exa \
 ttf-font-awesome \
 waybar \
 hypridle \
 hyprlock \
+zsh \
 --noconfirm
