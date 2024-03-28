@@ -7,4 +7,5 @@ hypridle \
 hyprlock \
 zsh \
 starship \
+alacritty \
 --noconfirm
