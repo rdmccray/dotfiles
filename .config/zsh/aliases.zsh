@@ -24,5 +24,5 @@ alias tlist="tmux list-sessions"
 alias tattach="tmux attach"
 
 # dotfiles git repository
-alias dotfiles='git --git-dir=$HOME/repos/dotfiles --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/git/dotfiles --work-tree=$HOME'
 
