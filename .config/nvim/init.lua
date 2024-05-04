@@ -1,3 +1,9 @@
+
+-- load vim options and key mappings
+require("settings.globals")
+require("settings.options")
+require("settings.keymaps")
+
 -- bootstrap lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -12,9 +18,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- setting the leader key as this has to be set before initializing lazy
-vim.g.mapleader = " "
-
 -- initialize lazy with dynamic loading of anything in the plugins directory
 require("lazy").setup({ { import = "plugins" }, }, {
   checker = {
@@ -26,6 +29,3 @@ require("lazy").setup({ { import = "plugins" }, }, {
   },
 })
 
--- load vim options and key mappings
-require("core.options")
-require("core.keymaps")

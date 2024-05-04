@@ -1,10 +1,16 @@
-import = [ "~/.config/alacritty/themes/campbell.toml" ]
 
+# general settings
+import = [ "~/.config/alacritty/themes/tokyo-night.toml" ]
 live_config_reload = true
 
 # [shell]
 # program = "/usr/bin/zsh"
 
 [window]
-padding = { x = 10, y = 10 }
+dimensions = { columns = 110 , lines = 50 }
+padding = { x = 10 , y = 10 }
 opacity = 1.0
+decorations = "None"
+
+[font]
+size = 14
