@@ -51,6 +51,7 @@ opt.timeoutlen = 300  -- lower than the default of 1000 to trigger which-key mor
 opt.undofile = true
 opt.undolevels = 10000
 opt.virtualedit = "block"
+opt.wildmode = "longest:full,full"
 opt.wrap = false
 
 
