@@ -1,50 +1,14 @@
 local opt = vim.opt
 
-opt.relativenumber = true
-opt.number = true
-opt.scrolloff = 10
-
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
-opt.expandtab = true
 opt.autoindent = true
-opt.smartindent = true
-
-opt.wrap = false
-
-opt.ignorecase = true
-opt.smartcase = true
-opt.incsearch = true
-opt.hlsearch = false
-
-opt.termguicolors = true
 opt.background = ""
-opt.signcolumn = "yes"
-opt.list = true
-opt.showmode = false
-opt.cursorline = true
-opt.pumblend = 10
-opt.pumheight = 10
-opt.shiftround = true
 opt.backspace = "indent,eol,start"
-
 opt.clipboard:append("unnamedplus")
-
-opt.splitright = true
-opt.splitbelow = true
-
-opt.iskeyword:append("-")
-
-opt.mouse = "a"
-
-opt.foldlevel = 99
-opt.foldmethod = "expr"
--- opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
-vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
-vim.opt.foldtext = ""
-vim.opt.fillchars = "fold: "
+opt.completeopt = "menu,menuone,noselect"
+opt.confirm = true
+opt.cursorline = true
+opt.expandtab = true
+-- opt.fillchars = "fold: "
 opt.fillchars = {
   foldopen = "",
   foldclose = "",
@@ -53,10 +17,47 @@ opt.fillchars = {
   diff = "╱",
   eob = " ",
 }
-
-opt.confirm = true
-opt.completeopt = "menu,menuone,noselect"
-opt.virtualedit = "block"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
+vim.opt.foldexpr = "v:lua.require'lazyvim.util'.ui.foldexpr()"
+opt.foldlevel = 99
+opt.foldmethod = "expr"
+opt.foldtext = ""
+opt.hlsearch = false
+opt.ignorecase = true
+opt.incsearch = true
+opt.iskeyword:append("-")
+opt.list = true
+opt.mouse = "a"
+opt.number = true
+opt.pumblend = 10
+opt.pumheight = 10
+opt.relativenumber = true
+opt.scrolloff = 10
+opt.shiftround = true
+opt.shiftwidth = 2
+opt.showmode = false
+opt.signcolumn = "yes"
+opt.smartcase = true
+opt.smartindent = true
+opt.softtabstop = 2
+opt.splitbelow = true
+opt.splitright = true
+opt.tabstop = 2
+opt.termguicolors = true
 opt.undofile = true
 opt.undolevels = 10000
+opt.virtualedit = "block"
+opt.wrap = false
+
+
+
+
+
+
+
+
+
+
+
+
 
