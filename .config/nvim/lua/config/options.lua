@@ -27,7 +27,7 @@ opt.ignorecase = true
 opt.incsearch = true
 opt.iskeyword:append("-")
 opt.laststatus = 3
-opt.list = true
+-- opt.list = true
 opt.mouse = "a"
 opt.number = true
 opt.pumblend = 10

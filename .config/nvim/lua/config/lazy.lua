@@ -1,9 +1,4 @@
 
--- load vim options and key mappings
-require("config.globals")
-require("config.options")
-require("config.keymaps")
-
 -- bootstrap lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
