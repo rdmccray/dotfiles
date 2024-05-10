@@ -1,7 +1,16 @@
 # checks for config directory and sets ZDOTDIR
-if [[ -z "$XDG_CONFIG_HOME" ]]; then
-    export XDG_CONFIG_HOME="$HOME/.config"
+
+if [[ -z "$PATH" || "$PATH" == "/bin:/usr/bin" ]]
+then
+	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
 fi
-if [[ -d "$XDG_CONFIG_HOME/zsh" ]]; then
-    export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+if [[ -z "$XDG_CONFIG_HOME" ]]
+then
+	export XDG_CONFIG_HOME="$HOME/.config"
 fi
+
+if [[ -d "$XDG_CONFIG_HOME/zsh" ]]
+then
+	export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+fi
+
