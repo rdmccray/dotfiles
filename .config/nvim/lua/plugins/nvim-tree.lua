@@ -30,6 +30,10 @@ return {
             enable = false,
           },
         },
+        expand_all = {
+          max_folder_discovery = 300,
+          exclude = {},
+        },
       },
       filters = {
         custom = { ".DS_Store" },
@@ -46,5 +50,12 @@ return {
     keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", { desc = "Focus on the file tree" }) -- place the focus to the file tree
     keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
     keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
+    
+    -- expand the file tree on open
+    local api = require("nvim-tree.api")
+    local Event = api.events.Event
+    api.events.subscribe(Event.TreeOpen, function()
+      api.tree.expand_all()
+    end)
   end
 }
