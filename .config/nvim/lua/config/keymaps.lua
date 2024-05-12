@@ -5,13 +5,13 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<ESC>", {desc = "Exit insert mode with jk."}) -- exit insert mode with jk 
 -- keymap.set("i", "ii", "<ESC>") -- exit insert mode with ii
 keymap.set("n", "<leader>wq", ":wq<CR>") -- save and quit
-keymap.set("n", "<leader>qa", ":qa!<CR>") -- quit all without saving
+keymap.set("n", "<leader>Q", ":qa!<CR>") -- quit all without saving
 keymap.set("n", "<leader>qq", ":q!<CR>") -- quit without saving
 keymap.set("n", "<leader>wf", ":w<CR>") -- save
-keymap.set("n", "<leader>Q", ":wqa<CR>") -- save and quit all
+keymap.set("n", "<leader>W", ":wqa<CR>") -- save and quit all
 keymap.set("n", "<leader>nh", ":noh<CR>", {desc = "Clear search highlights."})
--- keymap.set("n", "<leader>o", "o<ESC>", {desc = "Insert line below without insert mode."})
--- keymap.set("n", "<leader>O", "O<ESC>", {desc = "Insert line above without insert mode."})
+keymap.set("n", "<leader>o", "o<ESC>", {desc = "Insert line below without insert mode."})
+keymap.set("n", "<leader>O", "O<ESC>", {desc = "Insert line above without insert mode."})
 
 
 -- Split window management
