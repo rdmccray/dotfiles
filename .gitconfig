@@ -1,0 +1,7 @@
+[user]
+	name = rdmccray
+	email = dennis@themccrays.net
+[init]
+	defaultBranch = main
+[status]
+	showUntrackedFiles = no
