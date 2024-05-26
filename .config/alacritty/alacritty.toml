@@ -8,10 +8,11 @@ live_config_reload = true
 
 [window]
 dimensions = { columns = 110 , lines = 50 }
-padding = { x = 5 , y = 5 }
+padding = { x = 5 , y = 0 }
+dynamic_padding =  true
 opacity = 1.0
 decorations = "None"
 
 [font]
-normal = { family = "HackNerdFontMono", style = "Regular"}
+normal = { family = "HackNerdFontMono", style = "Regular" }
 size = 14
