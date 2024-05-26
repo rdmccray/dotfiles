@@ -6,8 +6,8 @@ return {
     enable_tab_bar = false,
     font_size = 14.0,
     -- font = wezterm.font("MesloLGS NF", { weight = "Regular" }),
-    font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
-    -- window_background_image = "/home/dennis/.config/wallpapers/troncity.png",
+    -- font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
+    font = wezterm.font("MesloLGS NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
     window_background_opacity = 0.8,
     window_padding = {
         left = 2,

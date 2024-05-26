@@ -12,7 +12,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # export VISUAL=/usr/local/bin/nvim
 export EDITOR=nvim
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
-export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # source configuration files
 [[ -f "$ZDOTDIR/aliases.zsh" ]] && source "$ZDOTDIR/aliases.zsh"
