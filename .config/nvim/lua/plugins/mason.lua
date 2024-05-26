@@ -7,9 +7,6 @@ return {
     },
     config = function()
         local capabilities = require("cmp_nvim_lsp").default_capabilities()
-        -- local on_attach = function(client, bufnr)
-        --     -- do something here but what?
-        -- end
 
         require("mason").setup({
             ui = {
@@ -21,8 +18,8 @@ return {
             },
         })
 
-        require("neoconf").setup({})
-        require("neodev").setup({})
+        require("neoconf").setup()
+        require("neodev").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
@@ -34,7 +31,15 @@ return {
                         capabilities = capabilities,
                         -- supposed to use "on_attach" to pass keymaps on
                         -- LSPAttach but I do not understand how to do so
-                        -- on_attach = on_attach,
+                        on_attach = function(_, bufnr)
+                            vim.keymap.set("n", "<leader>gh", vim.lsp.buf.hover, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>gt", vim.lsp.buf.type_definition, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>gi", vim.lsp.buf.implementation, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>dj", vim.diagnostic.goto_next, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>dk", vim.diagnostic.goto_prev, { buffer = bufnr })
+                            vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics<CR>", { buffer = bufnr })
+                        end,
                     })
                 end,
             },
