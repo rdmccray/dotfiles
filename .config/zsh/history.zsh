@@ -1,121 +1,159 @@
-cd hypr
-ls wallpapers
 pacman -qi ttf-font-awesome
 pacman -Ss ttf-font-awesome
-cd ..
 pacman -S alacritty
 sudo pacman -S alacritty
-cd git
 git clone https://aur.archlinux.org/paru-bin
 cd paru-bin
 makepkg -sic
 paru -S nerd-fonts-meslo
 paru -S ttf-meslo
-reboot
-cd .config
-ls
 sudo pacman -Sy
 sudo pacman -S ttf-hack-nerd
+logout
+reboot
+pacman -Ss neovim
+ls wallpapers
+ls modules
+cat hyprpaper.conf
+hyprctl monitors all
+nano hyprpaper.conf
+paru -S google-chrome
+pacman -S neovim
+sudo pacman -S neovim
+cd dotfiles
+cat gtkthemes.sh
+ssh-keygen -t ed25519 -C "dennis@themccrays.net"
+[200~EVAl "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cd .ssh
+cat id_ed25519.pub
+dotfiles
+cd it
+cd git
+rm -rf dotfiles
+git clone --bare git@github.com:rdmccray/dotfiles.git dotfiles
+nvim .gitignore
+mv .gitignore .gitconfig
+dotfiles reset
+dotfiles add ~/.config/hypr
+dotfiles add ~/.config/starship
+dotfiles restore aliases.bash
+dotfiles restore packages.sh
+dotfiles restore .gitignore
+dotfiles restore gtkthemes.sh
+pwd
+dotfiles add ~/.zshenv
+curl -sS https://starship.rs/install.sh | sh
+nvim ~/.config/zsh/.zshrc
+source ~/.config/zsh/.zshrc
+cd git/dotfiles
+home
+cd .config
+cd hypr
+dotfiles add ~/config/zsh/.zshrc
+dotfiles add ~/.config/zsh/.zshrc
+dotfiles add ~/.config/zsh
+dotfiles add .
+dotfiles add ../zsh/history.zsh
+dotfiles push --set-upstream origin main
+dotfiles statsu
+dotfiles commit -am "going back to arch"
+dotfiles push
+dotfiles status
+cd ..
+ls ~/git/dotfiles
+dotfiles checkout starship
+mkdir starship
+cd starship
+ls
+starship preset no-runtime-versions -o ~/.config/starship.toml
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+nvim starship.toml
+cd .config/zsh
+nvim
 exit
-: 1716933217:0;logout
-: 1716933225:0;reboot
-: 1716933332:0;ls
-: 1716933338:0;cd .config
-: 1716933339:0;ls
-: 1716933347:0;cd hypr
-: 1716933348:0;ls
-: 1716933372:0;pacman -Ss neovim
-: 1716933412:0;pwd
-: 1716933419:0;nano hyprpaper.conf
-: 1716933445:0;cd ..
-: 1716933445:0;ls
-: 1716933455:0;ls wallpapers
-: 1716933463:0;cd hypr
-: 1716933463:0;ls
-: 1716933501:0;ls modules
-: 1716933564:0;cat hyprpaper.conf
-: 1716933638:0;hyprctl monitors all
-: 1716933664:0;nano hyprpaper.conf
-: 1716933809:0;paru -S google-chrome
-: 1716934171:0;pacman -S neovim
-: 1716934179:0;sudo pacman -S neovim
-: 1716934200:0;nvim
-: 1716934664:0;ls
-: 1716934669:0;pwd
-: 1716934673:0;cd git
-: 1716934674:0;ls
-: 1716934677:0;cd dotfiles
-: 1716934678:0;ls
-: 1716934687:0;cat gtkthemes.sh
-: 1716953165:0;ssh-keygen -t ed25519 -C "dennis@themccrays.net"
-: 1716953215:0;[200~EVAl "$(ssh-agent -s)"
-: 1716953228:0;eval "$(ssh-agent -s)"
-: 1716953248:0;ssh-add ~/.ssh/id_ed25519
-: 1716953256:0;cd .ssh
-: 1716953257:0;ls
-: 1716953273:0;pwd
-: 1716953278:0;home
-: 1716953282:0;pwd
-: 1716953286:0;cd .ssh
-: 1716953288:0;ls
-: 1716953293:0;cat id_ed25519.pub
-: 1716953350:0;dotfiles
-: 1716953366:0;dotfiles status
-: 1716953386:0;pwd
-: 1716953451:0;home
-: 1716953453:0;cd it
-: 1716953455:0;cd git
-: 1716953457:0;ls
-: 1716953468:0;rm -rf dotfiles
-: 1716953585:0;git clone --bare git@github.com:rdmccray/dotfiles.git dotfiles
-: 1716953604:0;dotfiles status
-: 1716953629:0;home
-: 1716953630:0;ls
-: 1716953680:0;nvim .gitignore
-: 1716953706:0;dotfiles status
-: 1716953718:0;ls
-: 1716953731:0;mv .gitignore .gitconfig
-: 1716953736:0;dotfiles status
-: 1716953910:0;pwd
-: 1716953964:0;dotfiles reset
-: 1716953976:0;dotfiles status
-: 1716954229:0;dotfiles add ~/.config/hypr
-: 1716954238:0;dotfiles add ~/.config/starship
-: 1716954277:0;dotfiles status
-: 1716954297:0;pwd
-: 1716954321:0;dotfiles restore aliases.bash
-: 1716954330:0;dotfiles restore packages.sh
-: 1716954341:0;dotfiles restore .gitignore
-: 1716954345:0;dotfiles status
-: 1716954357:0;dotfiles restore gtkthemes.sh
-: 1716954377:0;cd .config
-: 1716954378:0;ls
-: 1716954402:0;dotfiles add ~/.config/zsh
-: 1716954416:0;pwd
-: 1716954432:0;dotfiles add ~/.zshenv
-: 1716954437:0;dotfiles status
-: 1716954553:0;curl -sS https://starship.rs/install.sh | sh
-: 1716954593:0;nvim ~/.config/zsh/.zshrc
-: 1716954748:0;source ~/.config/zsh/.zshrc
-: 1716954759:0;home
-: 1716954765:0;cd git/dotfiles
-: 1716954791:0;home
-: 1716954820:0;cd .config
-: 1716954822:0;cd hypr
-: 1716954823:0;ls
-: 1716954837:0;nvim
-: 1716954949:0;dotfiles status
-: 1716954987:0;dotfiles add ~/config/zsh/.zshrc
-: 1716955007:0;dotfiles add ~/.config/zsh/.zshrc
-: 1716955042:0;dotfiles add ~/.config/zsh
-: 1716955050:0;dotfiles status
-: 1716955069:0;dotfiles add .
-: 1716955075:0;dotfiles status
-: 1716955119:0;dotfiles add ../zsh/history.zsh
-: 1716955122:0;dotfiles status
-: 1716955146:0;dotfiles push
-: 1716955166:0;dotfiles push --set-upstream origin main
-: 1716955175:0;dotfiles statsu
-: 1716955181:0;dotfiles status
-: 1716955200:0;dotfiles push
-: 1716955233:0;dotfiles commit -am "going back to arch"
+: 1716958143:0;systemctl status bluetooth
+: 1716958176:0;pacman -Ss bluez
+: 1716958215:0;sudo pacman -S bluez
+: 1716958247:0;systemctl status bluetooth
+: 1716958265:0;systemctl enable bluetooth --now
+: 1716958277:0;systemctl status bluetooth
+: 1716958399:0;cd .config
+: 1716958402:0;cd starship
+: 1716958406:0;nvim starship.toml
+: 1716958678:0;cls
+: 1716958697:0;ls
+: 1716958717:0;nvim starship.toml
+: 1716959596:0;ls /usr/share/themes
+: 1716959610:0;ls /usr/share/themes/Default
+: 1716959617:0;ls /usr/share/themes/Default/gtk-3.0
+: 1716959951:0;cd ..
+: 1716959952:0;ls
+: 1716959982:0;pacman -Ss xdg
+: 1716960096:0;ls
+: 1716960150:0;ls /usr/share/themes/Default/gtk-3.0
+: 1716960170:0;cat /usr/share/themes/Default/gtk-3.0/gtk-keys.css
+: 1716960469:0;cd ..
+: 1716960470:0;ls
+: 1716960478:0;cd Downloads
+: 1716960479:0;ls
+: 1716960499:0;tar -xz Sweet-Dark-v40.tar.xz
+: 1716960513:0;tar -xvfz Sweet-Dark-v40.tar.xz
+: 1716960536:0;tar -xf Sweet-Dark-v40.tar.xz
+: 1716960539:0;ls
+: 1716960568:0;sudo mv Sweet-Dark-v40 /usr/share/themes
+: 1716960578:0;ls
+: 1716960590:0;ls /usr/share/themes
+: 1716960658:0;gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
+: 1716960725:0;sudo pacman -S thunar
+: 1716960783:0;pacman -S gvfs
+: 1716960788:0;sudo pacman -S gvfs
+: 1716961002:0;ls /usr/share/icons
+: 1716961010:0;ls
+: 1716961024:0;tar -xf candy-icons.tar.xz
+: 1716961026:0;ls
+: 1716961051:0;sudo mv candy-icons /usr/share/icons
+: 1716961059:0;home
+: 1716961060:0;ls
+: 1716961069:0;cat gtkthemes.sh
+: 1716961133:0;gsettings se org.gnome.desktop.interface icon-theme candy-icons
+: 1716961147:0;gsettings set org.gnome.desktop.interface icon-theme candy-icons
+: 1716961218:0;sudo pacman -S xdg-user
+: 1716961225:0;sudo pacman -Ss xdg
+: 1716961236:0;sudo pacman -Ss xdg-user-dirs
+: 1716961268:0;sudo pacman -S xdg-user-dirs
+: 1716961359:0;sudo reboot
+: 1716961498:0;p
+: 1716961673:0;pacman -Runs dolphin
+: 1716961679:0;sudo pacman -Runs dolphin
+: 1716961996:0;cd .config/nvim
+: 1716962005:0;nvim
+: 1716962109:0;sudo pacman -S ripgrep
+: 1716962134:0;sudo pacman -S unzip
+: 1716962142:0;nvim
+: 1716962295:0;sudo pacman -S xclip
+: 1716962334:0;home
+: 1716962342:0;nvim packages.sh
+: 1716962623:0;dotfiles status
+: 1716963218:0;cd .config/hypr
+: 1716963220:0;ls
+: 1716963228:0;cd modules
+: 1716963230:0;ls
+: 1716963239:0;nvim
+: 1716964005:0;home
+: 1716964008:0;git
+: 1716964020:0;nvim packages.sh
+: 1716964262:0;sudo pacman -S zsh-nvm
+: 1716964437:0;curl
+: 1716964597:0;curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+: 1716964677:0;nvm install --lts
+: 1716964741:0;command nvm -v
+: 1716964753:0;cd .config/zsh
+: 1716964759:0;nvim .zshrc
+: 1716964782:0;source .zshrc
+: 1716964785:0;nvm
+: 1716964797:0;nvm install --lts
+: 1716964809:0;nvim
+: 1716964857:0;dotfiles status
+: 1716964917:0;dotfiles commit -am "polishing the arch config"

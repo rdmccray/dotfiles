@@ -67,7 +67,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # eval "$(starship init zsh)"
 
 # source the powerlevel10k theme
-source $ZDOTDIR/themes/powerlevel10k/powerlevel10k.zsh-theme
+# source $ZDOTDIR/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 # [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
