@@ -157,3 +157,75 @@ exit
 : 1716964809:0;nvim
 : 1716964857:0;dotfiles status
 : 1716964917:0;dotfiles commit -am "polishing the arch config"
+: 1716964923:0;dotfiles push
+: 1716964967:0;pacman -Ss xfree86
+: 1716964987:0;cd ../hypr
+: 1716964988:0;ls
+: 1716964992:0;cd modules
+: 1716964998:0;nvim keybindings.conf
+: 1716965022:0;pacman -Ss xf86
+: 1716965099:0;nvim keybindings.conf
+: 1716965120:0;pacman -Ss xf86audio
+: 1716966076:0;gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+: 1716966170:0;gsettings set org.gnome.desktop.interface gtk-theme default
+: 1716966216:0;gsettings set org.gnome.desktop.interface gtk-theme prefer-dark
+: 1716966422:0;home
+: 1716966423:0;ls
+: 1716966431:0;cd Downloads/
+: 1716966431:0;ls
+: 1716966448:0;unzip gtk-master.zip
+: 1716966496:0;ls
+: 1716966500:0;cd gtk-master
+: 1716966501:0;ls
+: 1716966521:0;cd gtk-4.0
+: 1716966521:0;ls
+: 1716967020:0;gsettings set org.gnome.desktop.interface gtk-theme sweet-dark-v40
+: 1716967056:0;ls /usr/share/themes
+: 1716967074:0;gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
+: 1716967105:0;home
+: 1716967110:0;cd .config/wofi
+: 1716967111:0;ls
+: 1716967211:0;nvim config
+: 1716967306:0;reboot
+: 1716967379:0;cd .config/wofi
+: 1716967380:0;ls
+: 1716967391:0;nvim style.css
+: 1716991576:0;ls
+: 1716991581:0;nvim config
+: 1716991789:0;pkill wofi
+: 1716991809:0;wofi
+: 1716991879:0;killall wofi
+: 1716992418:0;pkill wofi
+: 1716992537:0;home
+: 1716992538:0;ls
+: 1716992546:0;cd .local
+: 1716992547:0;ls
+: 1716992550:0;cd share
+: 1716992551:0;ls
+: 1716992563:0;cd applications
+: 1716992564:0;ls
+: 1716992570:0;nvim mimeapps.list
+: 1716992608:0;home
+: 1716992744:0;reboot
+: 1716992983:0;cd .config/wofi
+: 1716992984:0;ls
+: 1716992988:0;nvim config
+: 1716993417:0;nvim style.css
+: 1717019558:0;cd ../wezterm
+: 1717019560:0;ls
+: 1717019567:0;nvim wezterm.lua
+: 1717019642:0;pgrep
+: 1717019651:0;pgrep wezterm
+: 1717019663:0;killall wezterm
+: 1717019675:0;pkill 5515
+: 1717019682:0;ps 
+: 1717019766:0;ps -e
+: 1717020010:0;killall wezterm-gui
+: 1717020026:0;ps -e
+: 1717020043:0;killall wezterm-gui
+: 1717020046:0;ps -e
+: 1717020068:0;cd ../hypr
+: 1717020068:0;ls
+: 1717020072:0;nvim
+: 1717021087:0;dotfiles status
+: 1717021141:0;dotfiles commit -am "tried wayland option on wezterm, fixed wofi config, adjusted hypridle"

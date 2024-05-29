@@ -38,3 +38,11 @@ window {
   background-color: #262626;
   outline: none;
 }
+
+#text:selected {
+  background: none;
+}
+
+#img:selected {
+  background: none;
+}

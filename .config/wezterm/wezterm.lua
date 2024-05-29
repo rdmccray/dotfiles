@@ -4,6 +4,7 @@ return {
     color_scheme = "Tokyonight",
     enable_scroll_bar = false,
     enable_tab_bar = false,
+    enable_wayland = true,
     font_size = 14.0,
     -- font = wezterm.font("MesloLGS NF", { weight = "Regular" }),
     -- font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
