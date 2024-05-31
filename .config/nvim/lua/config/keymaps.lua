@@ -1,5 +1,5 @@
 -- General vim.keymaps
-vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk." }) -- exit insert mode with
+vim.keymap.set("i", "jj", "<ESC>") -- exit insert mode with jj
 vim.keymap.set("i", "ii", "<ESC>") -- exit insert mode with ii
 vim.keymap.set("n", "<leader>wq", ":wq<CR>") -- save and quit
 vim.keymap.set("n", "<leader>Q", ":qa!<CR>") -- quit all without saving
