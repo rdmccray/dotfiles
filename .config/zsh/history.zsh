@@ -105,7 +105,6 @@ nvm
 nvm install --lts
 dotfiles commit -am "polishing the arch config"
 pacman -Ss xfree86
-cd modules
 pacman -Ss xf86
 nvim keybindings.conf
 pacman -Ss xf86audio
@@ -130,7 +129,6 @@ home
 cd .config/wofi
 nvim config
 nvim style.css
-nvim wezterm.lua
 pgrep
 pgrep wezterm
 pkill 5515
@@ -145,14 +143,11 @@ npm install -g neovim
 sudo pacman -Sy
 uname -r
 reboot
-cd .config/hypr
 nvim hyprpaper.conf
 sudo pacman -Ss neovim
 sudo pacman -Ss fd
 sudo pacman -S fd
-dotfiles status
 dotfiles commit -am "narrowing vim options"
-dotfiles push
 cd 
 cd home/dennis
 cd .config
@@ -200,18 +195,75 @@ sudo pacman -S ttf-nerd-fonts-symbols-mono
 killall wezterm
 cd ../../
 cd ../wezterm
-ls
-nvim
 pacman -Ss meslolgs
 pacman -Ss MesloLGS
 sudo pacman -S ttf-meslo-nerd
+sudo pacman -Runs ttf-meslo-nerd
+sudo pacman -S ttf-font-nerd
+sudo pacman -S nerd-fonts
+fc-list
+fc-list | grep Meslo
+fc-list | grep MesloLGS
+dotfiles status
+dotfiles commit -am "more configuring"
+dotfiles push
+paru -Ss wezterm
+cd .config/hypr
+cd modules
+nvim
+cd .config/wezterm
+ls
+nvim wezterm.lua
 exit
-: 1717248172:0;sudo pacman -Runs ttf-meslo-nerd
-: 1717248245:0;sudo pacman -S ttf-font-nerd
-: 1717248334:0;sudo pacman -S nerd-fonts
-: 1717248411:0;fc-list
-: 1717248469:0;fc-list | grep Meslo
-: 1717248524:0;fc-list | grep MesloLGS
-: 1717248546:0;nvim
-: 1717248941:0;dotfiles status
-: 1717248981:0;dotfiles commit -am "more configuring"
+: 1717250749:0;cd .config/alacritty
+: 1717250750:0;ls
+: 1717250754:0;nvim alacritty.toml
+: 1717250842:0;echo $XDG_DESKTOP_SESSION
+: 1717250857:0;cd ../hypr
+: 1717250858:0;ls
+: 1717250862:0;cd modules
+: 1717250864:0;ls
+: 1717250867:0;nvim
+: 1717250916:0;env = XDG_CURRENT_DESKTOP,Hyprland\
+
+: 1717250943:0;echo $XDG_CURRENT_DESKTOP
+: 1717251020:0;echo $XDG_SESSION_TYPE
+: 1717251031:0;echo $XDG_SESSION_DESKTOP
+: 1717251121:0;home
+: 1717251124:0;ls
+: 1717251132:0;cat gtkthemes.sh
+: 1717251164:0;ls /usr/share/themes
+: 1717251948:0;mkdir .themes
+: 1717251961:0;cd .themes
+: 1717251984:0;mv /usr/share/themes/Sweet-Dark-v40 .
+: 1717251997:0;sudo mv /usr/share/themes/Sweet-Dark-v40 .
+: 1717252032:0;sudo mv /usr/share/themes/Sweet-Dark-v40 ./Sweet-Dark-v40
+: 1717252035:0;ls
+: 1717252044:0;ls /usr/share/themes
+: 1717252321:0;cd ..
+: 1717252322:0;ls
+: 1717252339:0;cd .local
+: 1717252340:0;ls
+: 1717252343:0;cd share
+: 1717252344:0;ls
+: 1717252356:0;cd applications
+: 1717252357:0;ls
+: 1717252363:0;cat mimeapps.list
+: 1717253080:0;ls /usr/share/applications
+: 1717255133:0;sudo pacman -Rcns kitty
+: 1717255443:0;sudo pacman -Rs kitty
+: 1717255593:0;cp /usr/share/applications/avahi-discover.desktop .
+: 1717255596:0;ls
+: 1717255606:0;nvim avahi-discover.desktop
+: 1717255956:0;reboot
+: 1717256057:0;cd .local/share/applications
+: 1717256058:0;ls
+: 1717256065:0;cat avahi-discover.desktop
+: 1717256133:0;nvim avahi-discover.desktop
+: 1717256260:0;ls /usr/share/applications
+: 1717256291:0;cp /usr/share/applications/b*.desktop .
+: 1717256292:0;ls
+: 1717256306:0;nvim
+: 1717256666:0;dotfiles add ~/.local/share/applications
+: 1717256689:0;dotfiles status
+: 1717256785:0;dotfiles commit -am "remove applications from wofi and other config items"
