@@ -4,11 +4,11 @@ return {
     color_scheme = "Tokyonight",
     enable_scroll_bar = false,
     enable_tab_bar = false,
-    enable_wayland = true,
+    enable_wayland = false,
     font_size = 14.0,
     -- font = wezterm.font("MesloLGS NF", { weight = "Regular" }),
     -- font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
-    font = wezterm.font("MesloLGS NF", { weight = "Regular", stretch = "Normal", style = "Normal" }),
+    font = wezterm.font("MesloLGSNerdFont", { weight = "Regular", stretch = "Normal", style = "Normal" }),
     window_background_opacity = 0.8,
     window_padding = {
         left = 2,

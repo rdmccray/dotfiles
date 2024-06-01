@@ -8,8 +8,6 @@ makepkg -sic
 paru -S nerd-fonts-meslo
 paru -S ttf-meslo
 sudo pacman -S ttf-hack-nerd
-logout
-pacman -Ss neovim
 ls wallpapers
 ls modules
 cat hyprpaper.conf
@@ -63,14 +61,12 @@ pacman -Ss bluez
 sudo pacman -S bluez
 systemctl enable bluetooth --now
 systemctl status bluetooth
-cd .config
 cd starship
 nvim starship.toml
 ls /usr/share/themes/Default
 pacman -Ss xdg
 ls /usr/share/themes/Default/gtk-3.0
 cat /usr/share/themes/Default/gtk-3.0/gtk-keys.css
-cd ..
 cd Downloads
 tar -xz Sweet-Dark-v40.tar.xz
 tar -xvfz Sweet-Dark-v40.tar.xz
@@ -134,39 +130,88 @@ home
 cd .config/wofi
 nvim config
 nvim style.css
-cd ../wezterm
 nvim wezterm.lua
 pgrep
 pgrep wezterm
-killall wezterm
 pkill 5515
 ps 
 killall wezterm-gui
 ps -e
 cd ../hypr
-dotfiles status
 dotfiles commit -am "tried wayland option on wezterm, fixed wofi config, adjusted hypridle"
-dotfiles push
-cls
-cd .config/nvim
 pacman -s openrgb
 pacman -Ss openrgb
 npm install -g neovim
-nvim
 sudo pacman -Sy
-sudo pacman -Syu
 uname -r
 reboot
 cd .config/hypr
-ls
 nvim hyprpaper.conf
+sudo pacman -Ss neovim
+sudo pacman -Ss fd
+sudo pacman -S fd
+dotfiles status
+dotfiles commit -am "narrowing vim options"
+dotfiles push
+cd 
+cd home/dennis
+cd .config
+nvim name
+cd nvim.bak
+mv nvim.bak nvim
+cls
+cd nvim
+mv nvim nvim.bak
+mkdir nvim
+cd ~/.local/share
+rm -rf nvim
+cd ~/.config/nvim
+mkdir -p lua/config
+mkdir -p lua/plugins
+nvim lazy.lua
+nano ./lua/config
+cd plugins
+nano nvim-tree.lua
+nano lua/plugins/nvim-tree.lua
+which bash
+chsh -s /usr/bin/bash
+echo $SHELL
+logout
+cd .config/nvim
+nano globals.lua
+cd ../..
+cd lua
+cd config
+nano lazy.lua
+cd ..
+nano init.lua
+pacman -Ss gvim
+pacman -Ss neovim
+cd lua/config
+nano keymaps.lua
+sudo pacman -Syu
+shutdown
+shutdown -c
+paru -S spotify
+pacman -Ss wezterm
+pacman -S ttf-nerd-fonts-symbols-mono
+root pacman -S ttf-nerd-fonts-symbols-mono
+sudo pacman -S ttf-nerd-fonts-symbols-mono
+killall wezterm
+cd ../../
+cd ../wezterm
+ls
+nvim
+pacman -Ss meslolgs
+pacman -Ss MesloLGS
+sudo pacman -S ttf-meslo-nerd
 exit
-: 1717101374:0;cd .config/nvim
-: 1717101380:0;nvim
-: 1717102459:0;sudo pacman -Ss neovim
-: 1717102489:0;nvim
-: 1717102912:0;sudo pacman -Ss fd
-: 1717102948:0;sudo pacman -S fd
-: 1717102963:0;nvim
-: 1717113707:0;dotfiles status
-: 1717113760:0;dotfiles commit -am "narrowing vim options"
+: 1717248172:0;sudo pacman -Runs ttf-meslo-nerd
+: 1717248245:0;sudo pacman -S ttf-font-nerd
+: 1717248334:0;sudo pacman -S nerd-fonts
+: 1717248411:0;fc-list
+: 1717248469:0;fc-list | grep Meslo
+: 1717248524:0;fc-list | grep MesloLGS
+: 1717248546:0;nvim
+: 1717248941:0;dotfiles status
+: 1717248981:0;dotfiles commit -am "more configuring"
