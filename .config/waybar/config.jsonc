@@ -1,0 +1,99 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-bottom": 4,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "clock",
+        "custom/separator",
+        "hyprland/workspaces",
+        "tray"
+    ],
+    "modules-center": ["hyprland/window"],
+    "modules-right": [
+        "temperature",
+        "memory",
+        "cpu",
+        "pulseaudio",
+        "battery",
+        "network",
+        "custom/separator",
+        "custom/powermenu"
+    ],
+    "spacing": 8,
+    "clock": {
+        // 24 hour
+        // "format": " {:%H:%M} ",
+        // 12 hour
+        "format": " 󰸗 {:%H:%M} ",
+        "interval": 60,
+        "tooltip": true,
+        "tooltip-format": "{:%d %B %H:%M}"
+    },
+    "hyprland/workspaces": {
+        "active-only": false,
+        // turn on true to show same all workspaces on each monitor
+        "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "10"
+        },
+        "format-window-separator": "|",
+        "separate-outputs": false,
+        "sort-by": "number"
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "󰱓",
+        "format-disconnected": "󰅛",
+        "tool-tip": "true",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} {bandwidthTotalBits} 󰈀",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50
+    },
+    "temperature": {
+        "thermal-zone": 1,
+        "format": "CPU {temperatureC}°C {icon}" ,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
+        "critical-threshold": 80,
+        "format-icons": ["", "", ""]
+        "thermal-zone": 2,
+        "format": "GPU {temperatureC}°C {icon}" ,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
+        "critical-threshold": 80,
+        "format-icons": ["", "", ""]
+    },
+    "memory": {
+        "format": "󰫗 {}% ",
+        "tooltip": "false"
+    },
+    "cpu": {
+        "format": " {usage}% ",
+        "tooltip": "false"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "helvum",
+        "format-icons": ["", "", ""]
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    }
+ }

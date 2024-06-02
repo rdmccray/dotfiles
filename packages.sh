@@ -13,7 +13,8 @@ starship \
 alacritty \
 gvfs \
 thunar \
-xclip \
+wl-clipboard \
 unzip \
 ripgrep \
+polkit-kde-agent\
 --noconfirm
