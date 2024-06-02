@@ -267,3 +267,110 @@ exit
 : 1717256666:0;dotfiles add ~/.local/share/applications
 : 1717256689:0;dotfiles status
 : 1717256785:0;dotfiles commit -am "remove applications from wofi and other config items"
+: 1717256794:0;dotfiles push
+: 1717258216:0;hyprctl clients
+: 1717258484:0;home
+: 1717258594:0;hyprctl clients
+: 1717259498:0;cd .config/hypr/modules
+: 1717259499:0;ls
+: 1717259505:0;nvim windows.conf
+: 1717260023:0;hyprctl reload
+: 1717260087:0;nvim windows.conf
+: 1717260186:0;hyprctl clients
+: 1717260322:0;nvim windows.conf
+: 1717260339:0;cd .config/hypr
+: 1717260340:0;ls
+: 1717260342:0;cd modules
+: 1717260347:0;nvim windows.conf
+: 1717260608:0;hyprctl reload
+: 1717261542:0;nvim windows.conf
+: 1717261591:0;hyprctl reload
+: 1717261608:0;hyprctl clients
+: 1717261790:0;nvim windows.conf
+: 1717261894:0;hyprctl reload
+: 1717261940:0;nvim windows.conf
+: 1717262595:0;hyprctl reload
+: 1717262598:0;cd ..
+: 1717262603:0;ls
+: 1717262614:0;nvim hyprland.conf
+: 1717262889:0;cd modules
+: 1717262892:0;nvim windows.conf
+: 1717262935:0;hyprctl reload
+: 1717263094:0;nvim keybindings.conf
+: 1717263255:0;nvim windows.conf
+: 1717263326:0;hyprctl reload
+: 1717263382:0;hyprctl clients
+: 1717264148:0;nvim windows.conf
+: 1717264229:0;systemctl status xclip
+: 1717264250:0;nvim windows.conf
+: 1717266082:0;hyprctl reload
+: 1717266151:0;hyprctl clients
+: 1717266427:0;hyprctl reload
+: 1717266430:0;nvim windows.conf
+: 1717266476:0;hyprctl reload
+: 1717266535:0;nvim
+: 1717266904:0;hyprctl clients
+: 1717267188:0;nvim
+: 1717268613:0;hyprctl reload
+: 1717268622:0;nvim
+: 1717268717:0;hyprctl reload
+: 1717268758:0;nvim windows.conf
+: 1717268836:0;hyprctl reload
+: 1717269028:0;nvim windows.conf
+: 1717269347:0;hyprctl clients
+: 1717269377:0;nvim windows.conf
+: 1717269610:0;hyprctl clients -j
+: 1717269639:0;nvim windows.conf
+: 1717269835:0;hyprctl reload
+: 1717269856:0;nvim windows.conf
+: 1717269993:0;hyprctl reload
+: 1717270421:0;nvim windows.conf
+: 1717270962:0;hyprctl clients -j
+: 1717270977:0;nvim windows.conf
+: 1717271142:0;hyprctl clients -j
+: 1717271161:0;hyprctl clients
+: 1717271206:0;nvim windows.conf
+: 1717272394:0;hyprctl clients
+: 1717272445:0;hyprctl layers
+: 1717272484:0;nvim windows.conf
+: 1717272523:0;hyprctl clients
+: 1717272552:0;hyprctl layers
+: 1717272561:0;cls
+: 1717272563:0;hyprctl clients
+: 1717272772:0;nvim windows.conf
+: 1717273009:0;hyprctl clients
+: 1717273526:0;nvim windows.conf
+: 1717273633:0;hyprctl clients
+: 1717273678:0;nvim windows.conf
+: 1717273780:0;hyprctl clients
+: 1717274302:0;nvim windows.conf
+: 1717274375:0;hyprctl clients
+: 1717274422:0;nvim windows.conf
+: 1717274512:0;hyprctl clients
+: 1717274652:0;nvim windows.conf
+: 1717274785:0;hyprctl clients
+: 1717275076:0;nvim windows.conf
+: 1717275159:0;hyprctl clients
+: 1717275169:0;nvim windows.conf
+: 1717275282:0;hyprctl clients
+: 1717275312:0;nvim windows.conf
+: 1717275869:0;hyprctl clients
+: 1717284760:0;nvim windows.conf
+: 1717284864:0;hyprctl clients
+: 1717286696:0;hyprctl systeminfo -c
+: 1717287507:0;hyprctl systeminfo
+: 1717288867:0;cd ../../..
+: 1717288882:0;cd .config/nvim/nvim
+: 1717288892:0;cd .config/nvim/
+: 1717288895:0;ls
+: 1717288900:0;cd nvim
+: 1717288904:0;nvim
+: 1717289428:0;sudo pacman -R xclip
+: 1717289454:0;sudo pacman -S wl-clipboard
+: 1717289536:0;nvim
+: 1717289737:0;git status
+: 1717289756:0;dotfiles status
+: 1717289799:0;dotfiles add ~/config/nvim
+: 1717289812:0;dotfiles add ~/.config/nvim
+: 1717289823:0;dotfiles status
+: 1717289877:0;dotfiles commit -am "added hyprland window rule for Bitwarden and fixed clipboard for nvim"
