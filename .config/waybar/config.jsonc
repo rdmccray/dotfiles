@@ -71,7 +71,7 @@
         "format": "CPU {temperatureC}°C {icon}" ,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
         "critical-threshold": 80,
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
         "thermal-zone": 2,
         "format": "GPU {temperatureC}°C {icon}" ,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp2_input",
