@@ -87,9 +87,9 @@
         "tooltip": "false"
     },
     "wireplumber": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% {icon} ",
         "format-muted": "",
-        "on-click": "helvum",
+        "on-click": "wpctl",
         "format-icons": ["", "", ""]
     },
     "battery": {
