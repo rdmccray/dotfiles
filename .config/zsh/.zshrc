@@ -1,15 +1,9 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
 
 # export variables
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-# export VISUAL=/usr/local/bin/nvim
+export VISUAL=/usr/bin/nvim
 export EDITOR=nvim
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
 
@@ -57,19 +51,5 @@ bindkey "^[[3~"  delete-char          # delete key to delete character
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# prompt for ubuntu
-# PROMPT='%F{202}i%f%F{208}a%f%F{214}npa%f%F{220}n%F{221}@%f%F{220}ub%f%F{214}un%f%F{208}tu:%f%F{202}%1~/%f %F{214}%#%f '
-
-# prompt for archlinux
-# PROMPT='%F{33}i%f%F{39}a%f%F{38}n%f%F{44}pan%f%F{50}@%f%F{43}ar%f%F{44}ch%f%F{38}:%1~/%f %F{44}%#%f '
-
 # initialize the starship prompt
-# eval "$(starship init zsh)"
-
-# source the powerlevel10k theme
-# source $ZDOTDIR/themes/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-# [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
 eval "$(starship init zsh)"
