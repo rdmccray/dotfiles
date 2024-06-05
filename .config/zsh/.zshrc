@@ -7,30 +7,35 @@ export VISUAL=/usr/bin/nvim
 export EDITOR=nvim
 export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml
 
-# source configuration files
+# source these files if they exist
 [[ -f "$ZDOTDIR/aliases.zsh" ]] && source "$ZDOTDIR/aliases.zsh"
 [[ -f "$ZDOTDIR/options.zsh" ]] &&  source "$ZDOTDIR/options.zsh"
+[[ -f "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] &&  source "/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # source plugins
-[[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
-[[ -f "$ZDOTDIR/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh" ]] && source "$ZDOTDIR/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh"
+# [[ -f "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+# [[ -f "$ZDOTDIR/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh" ]] && source "$ZDOTDIR/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh"
 
-# configure tab completion
+
+# autosuggestion configuration
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' list-colors "${(s.:.)--color=auto}"                        # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                                                # automatically find new executables in path
-zstyle ':completion:*' menu select                                                # Highlight menu selection
-
-# completion
-autoload -U compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'                            # Case insensitive tab completion
+# zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=* r:|=*'
+# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'                            # Case insensitive tab completion
 # zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' # Case insensitive tab completion
-zstyle ':completion:*' list-colors "${(s.:.)--color=auto}"                        # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                                                # automatically find new executables in path
+# zstyle ':completion:*' max-errors 3
+# zstyle ':completion:*' menu select=1
 zstyle ':completion:*' menu select                                                # Highlight menu selection
+# zstyle ':completion:*' use-compctl false
+# zstyle ':completion:*' verbose false
+zstyle :compinstall filename '/home/dennis/.config/zsh/.zshrc'
+
+autoload -Uz compinit && compinit
 
 # colors
-autoload -U colors && colors        # colors
-autoload -U compinit colors zcalc   # theming
+# autoload -U colors && colors        # colors
+# autoload -U compinit colors zcalc   # theming
 
 # color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
