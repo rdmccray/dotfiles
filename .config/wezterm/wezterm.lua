@@ -9,6 +9,7 @@ return {
     -- font = wezterm.font("MesloLGS NF", { weight = "Regular" }),
     -- font = wezterm.font("JetBrains Mono", { weight = "Regular" }),
     font = wezterm.font("MesloLGS NF", { weight = "Regular" }),
+    hyperlink_rules = wezterm.default_hyperlink_rules(),
     window_background_opacity = 0.8,
     window_padding = {
         left = 5,
