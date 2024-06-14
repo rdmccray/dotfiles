@@ -11,10 +11,24 @@ vim.keymap.set("n", "<leader>nh", ":noh<CR>", { noremap = false, desc = "Clear s
 vim.keymap.set("n", "<leader>o", ":put=''<CR>", { noremap = false, desc = "Insert line below without insert mode" })
 vim.keymap.set("n", "<leader>O", ":put!=''<CR>", { noremap = false, desc = "Insert line above without insert mode" })
 
+-- **********************************
+-- ** OPTIONAL: disable arrow keys **
+-- **********************************
+-- vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
+-- vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
+-- vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
+-- vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+
 -- ***********************
 -- ** buffer management **
 -- ***********************
 vim.keymap.set("n", "<leader>bc", ":bdelete<CR>", { noremap = false })
+
+-- *********************************
+-- ** indent while in visual mode **
+-- *********************************
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left in visual mode" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right in visual mode" })
 
 -- *****************************
 -- ** split window management **
