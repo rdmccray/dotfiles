@@ -10,7 +10,9 @@ window#waybar {
     color: #ebdbb2;
 }
 
-#workspaces {
+#workspaces button {
+    padding: 0 15px 0 15px;
+    color: #FFFFFF;
 }
 
 #workspaces button.active {
