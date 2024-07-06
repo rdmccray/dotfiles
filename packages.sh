@@ -17,4 +17,8 @@ wl-clipboard \
 unzip \
 ripgrep \
 polkit-kde-agent \
+gnome-keyring \
+seahorse \
+qt5-graphicaleffects \
+qt5-quickcontrols \
 --noconfirm
