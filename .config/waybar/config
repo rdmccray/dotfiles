@@ -1,28 +1,27 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
-    "margin-top": 5,
-    "modules-left": ["battery", "pulseaudio", "backlight"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["network", "clock"],
+    "height": 20,
+    "margin-top": 3,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network","wireplumber"],
+    "reload_style_on_change": true,
 
-    "battery": {
-        "format": "bat: {capacity}%",
-        "format-charging": "charging: {capacity}%"
-    },
-    "clock": {
-        "format": "{:%I:%M %p}",
-        "format-alt": "{:%a, %d. %b  %I:%M %p}"
-    },
-    "pulseaudio": {
-        "format": "vol: {volume}%",
-        "format-bluetooth": "blu: {volume}%",
-        "format-muted": "vol: muted",
-        "scroll-step": 1,
-        "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
-    },
+"clock": {
+	"interval": 1,
+	"format": "{:%H:%M:%S %m/%d/%Y}",
+	"tooltip": true,
+    "tooltip-format": "{:%m/%d/%Y}"
+},
+"wireplumber": {
+    "format": "{icon}{volume}%",
+    "format-muted": "",
+    "on-click": "helvum",
+    "format-icons": ["", "", ""],
+    "max-volume": 100,
+    "scroll-step": 0.2
+},
     "network": {
         "interface": "wlo1",
         "format": "{ifname}",
@@ -47,8 +46,6 @@
             "10": "10"
         },
         "sort-by-number": true,
-        "persistent-workspaces": {
-            "*": 5
-        }
+        "persistent-workspaces": { "*": 5 }
     }
 }
