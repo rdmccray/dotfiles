@@ -12,7 +12,7 @@
     	"interval": 1,
     	"format": "{:%H:%M:%S %m/%d/%Y}",
     	"tooltip": true,
-       "tooltip-format": "{:%m/%d/%Y}"
+        "tooltip-format": "{:%m/%d/%Y}"
     },
     "wireplumber": {
        "format": "{icon}    {volume}%",
