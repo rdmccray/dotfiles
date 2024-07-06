@@ -16,5 +16,5 @@ thunar \
 wl-clipboard \
 unzip \
 ripgrep \
-polkit-kde-agent\
+polkit-kde-agent \
 --noconfirm
