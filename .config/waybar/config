@@ -8,44 +8,44 @@
     "modules-right": ["network","wireplumber"],
     "reload_style_on_change": true,
 
-"clock": {
-	"interval": 1,
-	"format": "{:%H:%M:%S %m/%d/%Y}",
-	"tooltip": true,
-    "tooltip-format": "{:%m/%d/%Y}"
-},
-"wireplumber": {
-    "format": "{icon}    {volume}%",
-    "format-muted": "",
-    "on-click": "helvum",
-    "format-icons": ["", "", ""],
-    "max-volume": 100,
-    "scroll-step": 0.2
-},
+    "clock": {
+    	"interval": 1,
+    	"format": "{:%H:%M:%S %m/%d/%Y}",
+    	"tooltip": true,
+       "tooltip-format": "{:%m/%d/%Y}"
+    },
+    "wireplumber": {
+       "format": "{icon}    {volume}%",
+       "format-muted": "",
+       "on-click": "helvum",
+       "format-icons": ["", "", ""],
+       "max-volume": 100,
+       "scroll-step": 0.2
+    },
     "network": {
-        "interface": "wlo1",
-        "format": "{ifname}",
-        "format-wifi": "wlo1: {essid}",
-        "format-ethernet": "eno1: {ipaddr}/{cidr}",
-        "format-disconnected": "wlo1: disconnected",
-        "max-length": 50
+       "interface": "wlo1",
+       "format": "{ifname}",
+       "format-wifi": "wlo1: {essid}",
+       "format-ethernet": "eno1: {ipaddr}/{cidr}",
+       "format-disconnected": "wlo1: disconnected",
+       "max-length": 50
     },
     "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "format-icons": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4",
-            "5": "5",
-            "6": "6",
-            "7": "7",
-            "8": "8",
-            "9": "9",
-            "10": "10"
-        },
-        "sort-by-number": true,
-        "persistent-workspaces": { "*": 5 }
+       "format": "{icon}",
+       "on-click": "activate",
+       "format-icons": {
+           "1": "1",
+           "2": "2",
+           "3": "3",
+           "4": "4",
+           "5": "5",
+           "6": "6",
+           "7": "7",
+           "8": "8",
+           "9": "9",
+           "10": "10"
+       },
+       "sort-by-number": true,
+       "persistent-workspaces": { "*": 5 }
     }
 }
