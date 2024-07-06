@@ -15,7 +15,7 @@
     "tooltip-format": "{:%m/%d/%Y}"
 },
 "wireplumber": {
-    "format": "{icon}{volume}%",
+    "format": "{icon}    {volume}%",
     "format-muted": "",
     "on-click": "helvum",
     "format-icons": ["", "", ""],
