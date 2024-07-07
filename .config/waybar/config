@@ -2,10 +2,10 @@
     "layer": "top",
     "position": "top",
     "height": 20,
-    "margin-top": 3,
+    "margin-top": 5,
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["network","wireplumber"],
+    "modules-right": ["memory","cpu","temperature","custom/gpu-usage","wireplumber"],
     "reload_style_on_change": true,
 
     "clock": {
@@ -14,6 +14,28 @@
     	"tooltip": true,
         "tooltip-format": "{:%m/%d/%Y}"
     },
+    "cpu": {
+        "interval": 1,
+        "format": "{usage}%  "
+    },
+    "custom/gpu-usage": {
+        //"exec": "cat /sys/class/hwmon/hwmon2/device/gpu_busy_percent",
+        "format": "GPU: {}%",
+        //"return-type": "",
+        //"interval": 1
+    },
+    "memory": {
+        "interval": 10,
+        "format": "MEM:  {used}  GiB",
+        "max-length": 20
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format": "CPU:  {temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
     "wireplumber": {
        "format": "{icon}    {volume}%",
        "format-muted": "",
@@ -21,14 +43,6 @@
        "format-icons": ["", "", ""],
        "max-volume": 100,
        "scroll-step": 0.2
-    },
-    "network": {
-       "interface": "wlo1",
-       "format": "{ifname}",
-       "format-wifi": "wlo1: {essid}",
-       "format-ethernet": "eno1: {ipaddr}/{cidr}",
-       "format-disconnected": "wlo1: disconnected",
-       "max-length": 50
     },
     "hyprland/workspaces": {
        "format": "{icon}",
@@ -46,6 +60,6 @@
            "10": "10"
        },
        "sort-by-number": true,
-       "persistent-workspaces": { "*": 5 }
+       "persistent-workspaces": { "*": 4 }
     }
 }
