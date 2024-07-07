@@ -50,9 +50,41 @@ window#waybar {
 }
 
 #wireplumber {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
     background-color: #282828;
     color: #fabd2f;
+}
+
+#cpu {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #282828;
+    color: #fabd2f;
+}
+
+#memory {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #282828;
+    color: #fabd2f;
+}
+
+#temperature {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #282828;
+    color: #fabd2f;
+}
+
+#custom-gpu-usage {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #282828;
+    color: #fabd2f 
 }
