@@ -20,5 +20,6 @@ polkit-kde-agent \
 gnome-keyring \
 seahorse \
 qt5-graphicaleffects \
-qt5-quickcontrols \
+qt5-quickcontrols2 \
+qt5-svg \
 --noconfirm
